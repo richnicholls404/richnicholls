@@ -1,0 +1,10 @@
+$bg-dark: #242834;
+
+$theme-color: #f04898;
+.text-theme {
+	color: $theme-color !important;
+}
+.bg-theme {
+	background-color: $theme-color !important;
+}
+$link-color: $theme-color;
