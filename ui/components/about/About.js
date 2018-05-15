@@ -40,7 +40,7 @@ export default class extends Component {
 						</div>
 					</div>
 					
-					<p className="mt-3">
+					<p className="mt-4">
 						I am currently working remotely as the lead developer for Showplans at Freeman Digital Ventures.
 						I began working for Showplans in 2014 and have been the main architect, developer and designer,
 						building through MVP to a full SaaS product that was acquired by Freeman in 2017.
