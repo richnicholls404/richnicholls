@@ -25,7 +25,7 @@ export default class extends Component {
 
 				<div className="container">
 					<div className="row">
-						<div className="col-md-6 mb-4">
+						<div className="col-md-6 mb-4 text-center">
 							<img src="/assets/me.jpg" className="img-fluid" alt="My beautiful face" style={{ borderRadius: '100%' }} />
 						</div>
 						<div className="col-md-6 mb-3">
