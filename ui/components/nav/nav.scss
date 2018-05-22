@@ -48,6 +48,10 @@
 				}
 			}
 		}
+
+		.navbar-toggler:focus {
+			outline: none;
+		}
 	}
 
 	&--fixed &__content {

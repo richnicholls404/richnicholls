@@ -50,7 +50,7 @@ export default class extends Component {
 				<div className={`${this.className('content')}`}>
 					<div className={this.className('content__content-inner')}>
 						<div className="container">
-							<nav className="navbar navbar-expand-md">
+							<nav className="navbar navbar-dark navbar-expand-md">
 								<a
 									className="navbar-brand active"
 									href="#home"
