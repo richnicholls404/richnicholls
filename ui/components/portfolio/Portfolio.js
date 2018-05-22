@@ -16,8 +16,8 @@ export default class extends Component {
 						<p>It is built using React, Bootstrap 4 and Sass.</p>
 						<p>It is coded in ES2017 JavaScript, adhering to the airbnb eslint ruleset (with just a couple of rules overridden).</p>
 						<p>It is transpiled and minified using Gulp and Babel.</p>
-						<p>It is hosted using Google Cloud Functions (serverless, event-driven compute platform with automatic scaling).</p>
-						<p>It has all of its source-code hosted on GitHub, so feel free to browse.</p>
+						<p>It is hosted using GitHub Pages.</p>
+						<p>It has all of its source-code hosted on GitHub, so please feel free to browse.</p>
 						<p className="text-muted">And yes, it is totally over-engineered for what it is, but a good portfolio should be :)</p>
 					</div>
 				</div>
