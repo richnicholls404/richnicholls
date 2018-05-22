@@ -10,7 +10,7 @@ import uglify from 'gulp-uglify';
 gulp.task('css', () => {
     gulp.src('./ui/ui.scss')
         .pipe(sass({ outputStyle: 'compressed', errLogToConsole: true }))
-        .pipe(gulp.dest('./public/dist'));
+        .pipe(gulp.dest('./docs/dist'));
 });
 
 // most helpful: https://gist.github.com/alkrauss48/a3581391f120ec1c3e03
@@ -21,7 +21,7 @@ gulp.task('js', () => {
         .pipe(source('ui.js'))
         .pipe(buffer())
         .pipe(uglify())
-        .pipe(gulp.dest('./public/dist'));
+        .pipe(gulp.dest('./docs/dist'));
 });
 
 gulp.task('js-dev', () => {
@@ -32,7 +32,7 @@ gulp.task('js-dev', () => {
         .pipe(buffer())
         .pipe(sourcemaps.init({ loadMaps: true }))
         .pipe(sourcemaps.write())
-        .pipe(gulp.dest('./public/dist'));
+        .pipe(gulp.dest('./docs/dist'));
 });
 
 gulp.task('default', ['css', 'js-dev']);
