@@ -1,4 +1,10 @@
 @import "./styles/variables.scss";
 @import "./styles/bootstrap.scss";
-@import './components/app.scss';
 
+@import './components/app/app.scss';
+@import './components/home/home.scss';
+@import './components/nav/nav.scss';
+@import './components/about/about.scss';
+@import './components/portfolio/portfolio.scss';
+@import './components/contact/contact.scss';
+@import './components/footer/footer.scss';

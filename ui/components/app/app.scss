@@ -16,17 +16,6 @@ section {
 	}
 }
 
-h1 {
-	font-size: 3.5rem;
-}
-
 h2 {
 	font-size: 2rem;
 }
-
-@import './home/home.scss';
-@import './nav/nav.scss';
-@import './about/about.scss';
-@import './portfolio/portfolio.scss';
-@import './contact/contact.scss';
-@import './footer/footer.scss';
