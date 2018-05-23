@@ -1,9 +1,22 @@
 .home {
 	background: $bg-dark url('/assets/home-background.svg');
 	background-size: 100% 100%;
+	font-size: 1rem;
 	padding: 0;
 
-	p {
+	@include media-breakpoint-up(sm) { 
+		font-size: 1.25rem;
+	}
+
+	@include media-breakpoint-up(md) { 
 		font-size: 1.5rem;
+	}
+
+	h1 {
+		font-size: 3em;
+	}
+
+	p {
+		font-size: 1em;
 	}
 }
