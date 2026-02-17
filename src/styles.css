@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Raleway", sans-serif;
+  --color-brand-dark: #242834;
+  --color-brand-darker: #1d2028;
+  --color-brand-lighter: #2e3340;
+  --color-theme: #f04898;
+}
+
+html {
+  scroll-behavior: smooth;
+}

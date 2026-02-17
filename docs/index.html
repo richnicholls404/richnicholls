@@ -1,15 +1,155 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Rich Nicholls - Full Stack Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body class="m-0 p-0 font-sans text-base">
 
-		<link rel="stylesheet" href="/dist/ui.css" />
-		<link href="https://fonts.googleapis.com/css?family=Raleway:500,700" rel="stylesheet">
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-    </head>
-    <body>
-        <div id="root"></div>
-		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
-        <script async src="/dist/ui.js"></script>
-    </body>
+    <!-- Home / Hero -->
+    <section id="home" class="min-h-[calc(100vh-4rem)] bg-brand-dark text-white flex flex-col justify-center p-0" style="background: #242834 url('assets/home-background.svg'); background-size: 100% 100%;">
+      <div class="max-w-5xl mx-auto px-4 w-full">
+        <h1 class="text-3xl sm:text-4xl md:text-6xl font-bold mb-3">Hello, I&rsquo;m <span class="text-theme whitespace-nowrap">Rich Nicholls</span></h1>
+        <p class="text-base sm:text-lg md:text-xl">I&rsquo;m a full stack developer from the wilds of Wiltshire, England.</p>
+        <p class="text-base sm:text-lg md:text-xl">Building things with TypeScript, React and LLMs.</p>
+      </div>
+    </section>
+
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-10 bg-brand-darker border-t-3 border-theme">
+      <div class="max-w-5xl mx-auto px-4 flex items-center justify-between h-16">
+        <a href="#home" class="text-white text-2xl font-bold no-underline hover:text-white">Rich Nicholls</a>
+        <a class="text-white hover:text-theme transition-colors duration-500" href="https://www.linkedin.com/in/rich-nicholls-a77a414b/" rel="noopener noreferrer" target="_blank" aria-label="LinkedIn">
+          <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 448 512">
+            <path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/>
+          </svg>
+        </a>
+      </div>
+    </nav>
+
+    <!-- About -->
+    <section id="about" class="py-16 md:py-32 bg-[#FCFCFC]">
+      <div class="max-w-5xl mx-auto px-4">
+        <div class="md:flex gap-8">
+          <div class="md:w-1/2 mb-8 text-center">
+            <img src="assets/me.jpg" class="rounded-full max-w-full inline-block" alt="Rich Nicholls" />
+          </div>
+          <div class="md:w-1/2 mb-6">
+            <!-- TypeScript - 100% -->
+            <div class="flex mb-2 text-sm font-bold">
+              <div class="bg-gray-600 text-white px-2 py-1" style="width: 33%">TypeScript</div>
+              <div class="bg-theme text-white text-right px-2 py-1" style="width: 67%">100%</div>
+            </div>
+            <!-- React - 100% -->
+            <div class="flex mb-2 text-sm font-bold">
+              <div class="bg-gray-600 text-white px-2 py-1" style="width: 33%">React</div>
+              <div class="bg-theme text-white text-right px-2 py-1" style="width: 67%">100%</div>
+            </div>
+            <!-- LLM / AI - 100% -->
+            <div class="flex mb-2 text-sm font-bold">
+              <div class="bg-gray-600 text-white px-2 py-1" style="width: 33%">LLM / AI</div>
+              <div class="bg-theme text-white text-right px-2 py-1" style="width: 67%">100%</div>
+            </div>
+            <!-- Apex - 90% -->
+            <div class="flex mb-2 text-sm font-bold">
+              <div class="bg-gray-600 text-white px-2 py-1" style="width: 33%">Apex</div>
+              <div class="bg-theme text-white text-right px-2 py-1" style="width: 60.3%">90%</div>
+            </div>
+            <!-- Serverless - 80% -->
+            <div class="flex mb-2 text-sm font-bold">
+              <div class="bg-gray-600 text-white px-2 py-1" style="width: 33%">Serverless</div>
+              <div class="bg-theme text-white text-right px-2 py-1" style="width: 53.6%">80%</div>
+            </div>
+            <!-- Node.js - 80% -->
+            <div class="flex mb-2 text-sm font-bold">
+              <div class="bg-gray-600 text-white px-2 py-1" style="width: 33%">Node.js</div>
+              <div class="bg-theme text-white text-right px-2 py-1" style="width: 53.6%">80%</div>
+            </div>
+            <!-- Unit Testing - 80% -->
+            <div class="flex mb-2 text-sm font-bold">
+              <div class="bg-gray-600 text-white px-2 py-1" style="width: 33%">Unit Testing</div>
+              <div class="bg-theme text-white text-right px-2 py-1" style="width: 53.6%">80%</div>
+            </div>
+            <!-- UI/UX - 80% -->
+            <div class="flex mb-2 text-sm font-bold">
+              <div class="bg-gray-600 text-white px-2 py-1" style="width: 33%">UI/UX</div>
+              <div class="bg-theme text-white text-right px-2 py-1" style="width: 53.6%">80%</div>
+            </div>
+            <!-- App Dev - 75% -->
+            <div class="flex mb-2 text-sm font-bold">
+              <div class="bg-gray-600 text-white px-2 py-1" style="width: 33%">App Dev</div>
+              <div class="bg-theme text-white text-right px-2 py-1" style="width: 50.25%">75%</div>
+            </div>
+            <!-- DevOps - 75% -->
+            <div class="flex mb-2 text-sm font-bold">
+              <div class="bg-gray-600 text-white px-2 py-1" style="width: 33%">DevOps</div>
+              <div class="bg-theme text-white text-right px-2 py-1" style="width: 50.25%">75%</div>
+            </div>
+
+            <!-- Previous skills -->
+            <p class="text-xs text-gray-400 mt-4 mb-2">Previously worked with</p>
+            <!-- PHP -->
+            <div class="flex mb-2 text-sm font-bold opacity-40">
+              <div class="bg-gray-500 text-white px-2 py-1" style="width: 33%">PHP</div>
+              <div class="bg-gray-400 text-white text-right px-2 py-1" style="width: 67%">100%</div>
+            </div>
+            <!-- Laravel -->
+            <div class="flex mb-2 text-sm font-bold opacity-40">
+              <div class="bg-gray-500 text-white px-2 py-1" style="width: 33%">Laravel</div>
+              <div class="bg-gray-400 text-white text-right px-2 py-1" style="width: 53.6%">80%</div>
+            </div>
+            <!-- Angular -->
+            <div class="flex mb-2 text-sm font-bold opacity-40">
+              <div class="bg-gray-500 text-white px-2 py-1" style="width: 33%">Angular</div>
+              <div class="bg-gray-400 text-white text-right px-2 py-1" style="width: 40.2%">60%</div>
+            </div>
+            <!-- Bootstrap -->
+            <div class="flex mb-2 text-sm font-bold opacity-40">
+              <div class="bg-gray-500 text-white px-2 py-1" style="width: 33%">Bootstrap</div>
+              <div class="bg-gray-400 text-white text-right px-2 py-1" style="width: 60.3%">90%</div>
+            </div>
+          </div>
+        </div>
+
+        <p class="mt-8">
+          I am currently working as a senior developer at <a href="https://flex.legal" class="text-theme hover:underline" rel="noopener noreferrer" target="_blank">Flex Legal</a>,
+          where I am responsible for the internal portal, Salesforce and the public website.
+        </p>
+        <p class="mt-4">
+          I am very enthusiastic when it comes to new situations and challenges,
+          and am always willing to learn new skills, programming languages and frameworks.
+        </p>
+        <p class="mt-4">
+          I graduated with a first class honours degree in Internet Technology
+          from Anglia Ruskin University (ARU) in Cambridge in 2005
+          and have been in full-time development positions ever since.
+          I am also a certified Scrum Master and am comfortable working in an Agile environment.
+        </p>
+      </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section id="portfolio" class="py-16 md:py-32 bg-brand-lighter">
+      <div class="max-w-5xl mx-auto px-4 text-white">
+        <h2 class="text-2xl font-bold mb-3">This website is intentionally simple</h2>
+        <p>It is plain HTML and Tailwind CSS. No frameworks, no client-side rendering.</p>
+        <p>The only build step is the Tailwind CLI to process the CSS.</p>
+        <p>It is hosted using GitHub Pages.</p>
+        <p>It has all of its source-code hosted on GitHub, so please feel free to browse.</p>
+        <p class="text-gray-400">The previous version was a React SPA with Gulp, Babel and Bootstrap &mdash; totally over-engineered. This time, less is more.</p>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <section class="py-12 bg-brand-darker">
+      <div class="max-w-5xl mx-auto px-4 text-white text-center">
+        <span>&copy;2026 Rich Nicholls</span>
+      </div>
+    </section>
+  </body>
 </html>

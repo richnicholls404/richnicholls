@@ -1,34 +1,33 @@
 # Rich Nicholls Portfolio
 
-## Install
+Static HTML portfolio site hosted on GitHub Pages.
 
-**Install gulp (for building the application)**  
-Run in console: `npm install gulp && npm install gulp --global`
+## Setup
 
-**Install http-server (for locally serving the application)**  
-Run in console: `npm install http-server --global`
-
-## Local hosting
-
-**Start http-server**  
-Run in separate console: `npm run start`
-
-**Access application**  
-Open URL: `http://localhost:8080`
+```
+npm install
+```
 
 ## Development
-A development build has uncompressed and human-readable JS files
 
-**Build just once**  
-Run in console: `gulp`
+Watch for CSS changes and rebuild automatically:
 
-or...
+```
+npm run dev
+```
 
-**Build immediately and every time a change is made**  
-Run in separate console: `gulp watch`
+Preview locally by opening `docs/index.html` in a browser, or:
 
-## Production
-A production build will uglify and compress the JS files
+```
+npx serve docs
+```
 
-**Build just once**
-Run in console: `gulp prod`
+## Production Build
+
+Build minified CSS:
+
+```
+npm run build
+```
+
+The built CSS is output to `docs/css/styles.css`. Commit the `docs/` folder to deploy via GitHub Pages.
