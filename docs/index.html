@@ -16,14 +16,22 @@
     <!-- Home / Hero -->
     <section
       id="home"
-      class="min-h-[50vh] md:min-h-[calc(100vh-4rem)] bg-brand-dark text-white flex flex-col justify-center p-0 relative overflow-hidden"
+      class="min-h-[40vh] md:min-h-[calc(100vh-4rem)] bg-brand-dark text-white flex flex-col justify-center p-0 relative overflow-hidden"
     >
       <canvas
         id="hero-canvas"
         class="absolute inset-0 w-full h-full"
         style="pointer-events: none"
       ></canvas>
-      <div class="max-w-5xl mx-auto px-4 w-full relative z-10" style="text-shadow: 0 0 20px #242834, 0 0 40px #242834, 0 0 80px #242834">
+      <div
+        class="max-w-5xl mx-auto px-4 w-full relative z-10"
+        style="
+          text-shadow:
+            0 0 20px #242834,
+            0 0 40px #242834,
+            0 0 80px #242834;
+        "
+      >
         <h1 class="text-3xl sm:text-4xl md:text-6xl font-bold mb-3">
           Hello, I&rsquo;m
           <span class="text-theme whitespace-nowrap">Rich Nicholls</span>
@@ -32,7 +40,7 @@
           I&rsquo;m a full stack developer from the wilds of Wiltshire, England.
         </p>
         <p class="text-base sm:text-lg md:text-xl">
-          Building things with TypeScript, React and LLMs.
+          I like to build things with TypeScript, React and LLMs.
         </p>
       </div>
     </section>
@@ -289,15 +297,18 @@
           It is plain HTML and Tailwind CSS. No frameworks, no client-side
           rendering.
         </p>
-        <p>The only build step is the Tailwind CLI to process the CSS.</p>
-        <p>It is hosted using GitHub Pages.</p>
-        <p>
+        <p class="mt-2">
+          The only build step is the Tailwind CLI to process the CSS.
+        </p>
+        <p class="mt-2">It is hosted using GitHub Pages.</p>
+        <p class="mt-2">
           It has all of its source-code hosted on GitHub, so please feel free to
           browse.
         </p>
-        <p class="text-gray-400">
-          The previous version was a React SPA with Gulp, Babel and Bootstrap
-          &mdash; totally over-engineered. This time, less is more.
+        <p class="text-gray-400 mt-2">
+          The previous version was a React SPA with Gulp, Babel and Bootstrap -
+          totally over-engineered but designed to demonstrate what I could do.
+          This time, less is more.
         </p>
       </div>
     </section>
@@ -321,32 +332,42 @@
           grid,
           time = 0;
 
-        const prompts = [
-          "Refactor the Apex trigger to handle bulk operations",
-          "Build a React hook for real-time Salesforce data sync",
-          "Write TypeScript generics for the API response wrapper",
-          "Implement streaming LLM responses in the chat widget",
-          "Create a serverless function for processing webhooks",
-          "Write integration tests for the Salesforce OAuth flow",
-          "Design a prompt template system for structured output",
-          "Migrate the legacy PHP portal to a React frontend",
-          "Build vector search for matching candidates to roles",
-          "Set up a CI pipeline with automated Apex test runs",
-          "Create an event-driven workflow for contract processing",
-          "Implement semantic search across the knowledge base",
-          "Write a database migration for the new billing schema",
-          "Build a RAG pipeline for context-aware chat responses",
-          "Optimise the Salesforce SOQL queries for reporting",
-          "Implement WebSocket connections for live notifications",
-          "Create a Node.js service for PDF generation and signing",
-          "Write Apex batch jobs for monthly data reconciliation",
-          "Build an AI document classifier for legal intake",
-          "Design a React context provider for feature flags",
-          "Write a custom hook for debounced search with filters",
-          "Implement rate limiting middleware for the REST API",
-          "Build a Tailwind component library for the portal UI",
-          "Fine-tune embeddings on domain-specific legal data",
+        const taggedPrompts = [
+          "Refactor the **Apex trigger** to handle bulk insert operations",
+          "Build a **React hook** for real-time Salesforce data sync",
+          "Write **TypeScript generics** for the API response wrapper",
+          "Integrate **LLM** completions into the contract review workflow",
+          "Create a **serverless** function for processing inbound events",
+          "Write **integration tests** for the portal authentication flow",
+          "Add linting and type-check steps to the **GitHub Actions** pipeline",
+          "Set up a **CI pipeline** with automated test coverage gates",
+          "Implement **event-sourcing** for the contract audit trail",
+          "Add **Claude Code** hooks to the developer workflow",
+          "Retrieve **Salesforce** Flows via the SF CLI and convert to Apex",
+          "Scaffold a **WebSocket** connection layer for real-time updates",
+          "Create a **Node.js** queue service for contract processing",
+          "Write **Apex batch** classes for monthly opportunity reconciliation",
+          "Build an **agentic** workflow for legal document intake",
+          "Design a **React context** provider for global state management",
+          "Add **REST API** endpoints for the mobile app backend",
+          "Implement secure **webhooks** for third-party service integrations",
+          "Build a **Tailwind** component library for the portal UI",
+          "Configure **MCP servers** for tool-augmented LLM workflows",
+          "Write **unit tests** with full coverage for the auth module",
+          "Package the React app as a native build using **Capacitor**",
+          "Implement **prompt engineering** patterns for structured output",
+          "Build a **dashboard** with real-time analytics and charts",
         ];
+
+        const prompts = [];
+        const keywords = [];
+        taggedPrompts.forEach(function (tagged) {
+          var match = tagged.match(/\*\*(.+?)\*\*/);
+          if (match) {
+            keywords.push(match[1]);
+            prompts.push(tagged.replace(/\*\*(.+?)\*\*/, "$1"));
+          }
+        });
 
         const fontSize = 14;
         const charW = 8.4;
@@ -366,41 +387,6 @@
           rows = Math.ceil(h / lineH) + 2;
           buildGrid();
         }
-
-        const keywords = [
-          "Apex trigger",
-          "bulk operations",
-          "React hook",
-          "Salesforce",
-          "TypeScript generics",
-          "streaming LLM",
-          "serverless",
-          "webhooks",
-          "integration tests",
-          "OAuth flow",
-          "prompt template",
-          "legacy PHP",
-          "vector search",
-          "CI pipeline",
-          "event-driven",
-          "contract processing",
-          "semantic search",
-          "knowledge base",
-          "database migration",
-          "RAG pipeline",
-          "SOQL queries",
-          "WebSocket",
-          "PDF generation",
-          "batch jobs",
-          "document classifier",
-          "feature flags",
-          "debounced search",
-          "rate limiting",
-          "REST API",
-          "Tailwind",
-          "fine-tune",
-          "embeddings",
-        ];
 
         let spotlights = [];
         const heroText = document.querySelector("#home .relative.z-10");
